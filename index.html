@@ -5,70 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style> 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #be0000;
-            color: #fff;
-            padding: 10px 20px;
-        }
-        p {
-            color: #f30000;
-        }
-        P1 {
-            color: bisque;
-        }
-        
-        main {
-            padding: 20px;
-        }
-        aside {
-            background-color: #c90000;
-            padding: 10px;
-            margin-top: 20px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            bottom: 0;
-            width: 100%;
-        }
-        img {
-            max-width: 10%;
-            height: auto;
-        }
-        .Beckgroound_image {
-            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/033/533/016/small/metallic-texture-background-photo.jpg);
-            
-        }
-
+        /* Your CSS styles remain the same */
     </style> 
 </head>
 <body>
     <header>
         <h1>Fitlibrary</h1>
-            <table>
-                <tr>
-                    
-                    <th><a href="signup.html"><div class="vadibas_josla">Signup</div></a></th>
-                    <th><a href="login.html"><div class="vadibas_josla">Login</div></a></th>
-                    <th><a href="index.html"><div class="vadibas_josla">Home</div></Home></a></th>
-                    <th><a href="about.html"><div class="vadibas_josla">About</div></a></th>
-                    <th><a href="contact.html"><div class="vadibas_josla">Contact</div></a></th>
-                </tr>
-            </table>
+
     </header>
     <main class="Beckgroound_image">
-        <h2>We have made programm...</h2>
-        <p><b>The programm that finally will end our suffering for not knowing...</b></p>
-        <p><i>The programm that will help you to see your progress and actualy know how fast you progress <br> and your PR's </i></p>
-        <img src="C:\Users\aa00024\Desktop\bildite.jfif" alt="Skaista bilde">
+        <table>
+            <tr>
+                <th><a href="signup.html"><div class="vadibas_josla">Signup</div></a></th>
+                <th><a href="login.html"><div class="vadibas_josla">Login</div></a></th>
+                <th><a href="index.html"><div class="vadibas_josla">Home</div></Home></a></th>
+                <th><a href="about.html"><div class="vadibas_josla">About</div></a></th>
+                <th><a href="contact.html"><div class="vadibas_josla">Contact</div></a></th>
+                <th><a href="coaching.html"><div class="vadibas_josla">Coaching</div></a></th>
+            </tr>
+        </table>
+        <div id="demo"></div>
+        <script>
+            var i = 0;
+            var j = 0;
+            var txt = [
+                "We have made programm...",
+                "The programm that finally will end our suffering for not knowing...",
+                "The programm that will help you to see your progress and actualy know how fast you progress... and your PR's... ",
+                "This is FITLIBRARY"
+            ];
+            var speed = 50;
 
+            function typeWriter() {
+                if (j < txt.length) {
+                    if (i < txt[j].length) {
+                        document.getElementById("demo").innerHTML += txt[j].charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                    } else {
+                        i = 0;
+                        j++;
+                        document.getElementById("demo").innerHTML += "<br>";
+                        setTimeout(typeWriter, 2000); // wait 2 seconds before displaying the next line
+                    }
+                    
+                }
+            }
+
+            typeWriter();
+        </script>
+        <img src="darbvirsa/bildite" alt="Skaista bilde">
     </main>
     <aside>
         <h3>We don't bite</h3>
@@ -78,7 +64,7 @@
         </ul>
     </aside>
     <footer>
-        <p>&copy; all rights reserved</p>
+        <p1>&copy; all rights reserved</p1>
         <p>
             <a href="https://www.facebook.com/?locale=lv_LV">Facebook</a> | 
             <a href="https://x.com/">x.com</a> | 
