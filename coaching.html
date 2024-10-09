@@ -51,6 +51,22 @@
             .plan p {
                 padding: 0 10px; /* Padding for the description */
             }
+            .take-my-money {
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+            }
+            .take-my-money button {
+                background-color: #34C759; /* Green color */
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .take-my-money button:hover {
+                background-color: #2E865F; /* Darker green on hover */
+            }
         </style>
     </head>
     <body>
@@ -71,34 +87,25 @@
         </header>
         
         <h2>Coaching Plans</h2>
-        <a href="checkout.html">
         <div class="coaching-plans">
-                <div class="plan">
-                    <img src="noobplan.jfif" alt="Basic Plan">
-                    <h3>Basic Plan</h3>
-                    <p>Basic coaching with essential guidance for beginners.</p>
-                </div>
-            
-                <div class="plan">
-                    <img src="proplan.jfif" alt="Pro Plan">
-                    <h3>Pro Plan</h3>
-                    <p>Intensive coaching with personalized training schedules.</p>
-                </div>
-                <div class="plan">
-                    <img src="pro+plan.jfif" alt="Pro+ Plan">
-                    <h3>Pro+ Plan</h3>
-                    <p>Comprehensive coaching with advanced techniques and diet plans.</p>
-                </div>
+            <div class="plan">
+                <img src="noobplan.jfif" alt="Basic Plan">
+                <h3>Basic Plan</h3>
+                <p>Basic coaching with essential guidance for beginners.</p>
             </div>
-        </a>
+            
+            <div class="plan">
+                <img src="proplan.jfif" alt="Pro Plan">
+                <h3>Pro Plan</h3>
+                <p>Intensive coaching with personalized training schedules.</p>
+            </div>
+            <div class="plan">
+                <img src="pro+plan.jfif" alt="Pro+ Plan">
+                <h3>Pro+ Plan</h3>
+                <p>Comprehensive coaching with advanced techniques and diet plans.</p>
+            </div>
+        </div>
 
-        <footer>
-            <p>&copy; All rights reserved</p>
-            <p>
-                <a href="https://www.facebook.com/?locale=lv_LV">Facebook</a> | 
-                <a href="https://x.com/">x.com</a> | 
-                <a href="https://www.instagram.com/">Instagram</a>
-            </p>
-        </footer>
-    </body>
-</html>
+        <a href="checkout.html" class="take-my-money">
+            <button>Take My Money</button>
+        </a>
