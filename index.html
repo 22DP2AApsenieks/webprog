@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style> 
-        /* Your CSS styles remain the same */
+       
     </style> 
 </head>
 <body>
@@ -13,9 +13,11 @@
         <h1>Fitlibrary</h1>
     <style>
             .var {
-                color: red;          /* Sets the text color to red */
-                font-size: 24px;    /* Sets the font size to 24 pixels */
-                font-family: Arial, sans-serif;  /* Example font family */
+                color: rgb(255, 255, 255);          
+                font-size: 24px;    
+                font-family: 'Times New Roman', Times, serif, sans-serif;  
+                font-weight: bold;
+
             }
             header {
             background-color: #be0000;
@@ -29,6 +31,10 @@
             padding: 10px;
             bottom: 0;
             width: 100%;
+            position: absolute;
+            }
+            main {
+                background-color: #333;
             }
 
     </style>
@@ -47,28 +53,30 @@
             </tr>
         </table>
         <div id="demo" class="var"></div>
+        <div id="demo2" class="var"></div>
         <script>
             var i = 0;
             var j = 0;
             var txt = [
-                "We have made programm...",
+                "We have made program...",
                 "The programm that finally will end our suffering for not knowing...",
                 "The programm that will help you to see your progress and actualy know how fast you progress... and your PR's... ",
+                "   ",
                 "This is FITLIBRARY"
             ];
-            var speed = 50;
+            var speed = 40; //0.04sec
 
             function typeWriter() {
                 if (j < txt.length) {
                     if (i < txt[j].length) {
                         document.getElementById("demo").innerHTML += txt[j].charAt(i);
                         i++;
-                        setTimeout(typeWriter, speed);
+                        setTimeout(typeWriter, speed); //tad kad uzraksta katru burtu
                     } else {
                         i = 0;
                         j++;
                         document.getElementById("demo").innerHTML += "<br>";
-                        setTimeout(typeWriter, 2000); // wait 2 seconds before displaying the next line
+                        setTimeout(typeWriter, 1000); // wait 1 seconds before displaying the next line, when all line is writed
                     }
                     
                 }
@@ -76,7 +84,7 @@
 
             typeWriter();
         </script>
-        <img src="bildite.jfif" alt="Skaista bilde">
+        <img src="pro+plan.jfif" alt="Average musu lietotnes lietotajs">
     </main>
     <aside>
         <h3>We don't bite</h3>

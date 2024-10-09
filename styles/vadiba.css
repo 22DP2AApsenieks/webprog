@@ -1,7 +1,9 @@
 .vadibas_josla {
-    background-color: chocolate;
+    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     transition: background, 1.5s;
+    width: 7rem;
+    height: 1.5rem;
 }
 .vadibas_josla:hover {
     background-color: #f0c505;
