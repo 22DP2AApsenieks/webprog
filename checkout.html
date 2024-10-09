@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles/vadiba.css">
+	<title>Checkout Page</title>
+	<style>
+		/* Add some basic styling to make the page look decent */
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.container {
+			width: 80%;
+			margin: 40px auto;
+			padding: 20px;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.form-group {
+			margin-bottom: 20px;
+		}
+		.label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		.input-field {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+		}
+		.button {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		.button:hover {
+			background-color: #3e8e41;
+		}
+        header {
+                background-color: #be0000;
+                color: #fff;
+                padding: 10px 20px;
+        }
+	</style>
+</head>
+<body>
+    <header>
+        <h1>Fitlibrary</h1>
+
+        <table>
+            <tr>
+                <th><a href="signup.html"><div class="vadibas_josla">Signup</div></a></th>
+                <th><a href="login.html"><div class="vadibas_josla">Login</div></a></th>
+                <th><a href="index.html"><div class="vadibas_josla">Home</div></a></th>
+                <th><a href="about.html"><div class="vadibas_josla">About</div></a></th>
+                <th><a href="contact.html"><div class="vadibas_josla">Contact</div></a></th>
+                <th><a href="coaching.html"><div class="vadibas_josla">Coaching</div></a></th>
+            </tr>
+        </table>
+
+    </header>
+	<div class="container">
+		<h2>Checkout Page</h2>
+		<form>
+			<div class="form-group">
+				<label for="name" class="label">Name:</label>
+				<input type="text" id="name" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="email" class="label">Email:</label>
+				<input type="email" id="email" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="address" class="label">Address:</label>
+				<input type="text" id="address" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="city" class="label">City:</label>
+				<input type="text" id="city" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="state" class="label">State:</label>
+				<input type="text" id="state" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="zip" class="label">Zip:</label>
+				<input type="text" id="zip" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="card-number" class="label">Card Number:</label>
+				<input type="text" id="card-number" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="expiration" class="label">Expiration Date:</label>
+				<input type="text" id="expiration" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="cvv" class="label">CVV:</label>
+				<input type="text" id="cvv" class="input-field">
+			</div>
+			<button class="button">Place Order</button>
+		</form>
+	</div>
+</body>
+</html>
