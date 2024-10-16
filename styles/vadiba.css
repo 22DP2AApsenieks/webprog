@@ -4,7 +4,9 @@
     transition: background, 1.5s;
     width: 7rem;
     height: 1.5rem;
+    color: crimson;
+    text-align: center;
 }
 .vadibas_josla:hover {
-    background-color: #f0c505;
+    background-color: #000000;
 }
