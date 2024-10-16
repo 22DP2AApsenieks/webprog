@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/vadiba.css">
+        <style>
+            header {
+                background-color: #be0000;
+                color: #fff;
+                padding: 10px 20px;
+            }
+            footer {
+                background-color: #333;
+                color: #fff;
+                text-align: center;
+                padding: 10px;
+                bottom: 0;
+                width: 100%;
+                position: absolute;
+            }
+            h2 {
+                text-align: center;
+                margin-top: 20px;
+            }
+            .coaching-plans {
+                display: flex;
+                justify-content: center;
+                margin: 20px;
+                gap: 20px; /* Space between cards */
+            }
+            .plan {
+                width: 250px; /* Width of the card */
+                border: 1px solid #ccc; /* Border for the card */
+                border-radius: 10px; /* Rounded corners */
+                overflow: hidden; /* Ensures no overflow */
+                text-align: center;
+                transition: transform 0.3s; /* Smooth transition for hover effect */
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .plan:hover {
+                transform: translateY(-20px); /* Move up on hover */
+            }
+            .plan img {
+                width: 100%; /* Adjust image to fit the card width */
+                border-bottom: 1px solid #ccc; /* Separate image from text */
+            }
+            .plan h3 {
+                margin: 10px 0; /* Spacing above and below the title */
+            }
+            .plan p {
+                padding: 0 10px; /* Padding for the description */
+            }
+            .take-my-money {
+                display: block;
+                margin: 20px auto;
+                text-align: center;
+            }
+            .take-my-money button {
+                background-color: #34C759; /* Green color */
+                color: #fff;
+                border: none;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+            }
+            .take-my-money button:hover {
+                background-color: #2E865F; /* Darker green on hover */
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Fitlibrary</h1>
+
+            <table>
+                <tr>
+                    <th><a href="signup.html"><div class="vadibas_josla">Signup</div></a></th>
+                    <th><a href="login.html"><div class="vadibas_josla">Login</div></a></th>
+                    <th><a href="index.html"><div class="vadibas_josla">Home</div></a></th>
+                    <th><a href="about.html"><div class="vadibas_josla">About</div></a></th>
+                    <th><a href="contact.html"><div class="vadibas_josla">Contact</div></a></th>
+                    <th><a href="coaching.html"><div class="vadibas_josla">Coaching</div></a></th>
+                </tr>
+            </table>
+
+        </header>
+        
+        <h2>Basic plans</h2>
+        <div class="coaching-plans">
+            <div class="plan">
+                <img src="noobplan.jfif" alt="Basic Plan">
+                <h3>Basic Plan</h3>
+                <p>Basic coaching with essential guidance for beginners(our database about exercises). This plan will focus on helping you to start you fitnes journey</p>
+            </div>
+            </a>
+        </div>
+
+
+        <a href="checkout.html" class="take-my-money">
+            <button>Buy this plan</button>
+        </a>
